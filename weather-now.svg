@@ -1,0 +1,3929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather free icon | Reshot</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+    <link rel="preconnect" href="https://www.reshot.com" />
+    <link rel="preconnect" href="https://cdn.rollbar.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preload" href="https://www.reshot.com/build/reshot-logo--mark-f8dfafbc1cc8fbf4dfa0e2f210265735aefa6e32f883b5a1fe27fd94f84719b3.svg" as="image" />
+  
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.reshot.com/build/favicons/apple-icon-72x72-52b3e382be644b3b3844dfe4f46fbed61c380228a8dd8364b19e3c2505adb7ca.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.reshot.com/build/favicons/apple-icon-180x180-1cc7650c518e0d48ee137a4f222d4036e31fcaeea0579c1b3c277a56a84c3620.png">
+  <link rel="icon" type="image/png" href="https://www.reshot.com/build/favicons/favicon-eacea34ccb8df4229e741aab6a417f80c44e9c904a6885b746f602af7cd3d0ac.png">
+
+    <script>
+      var _rollbarConfig = {
+        accessToken: "8617a7669c8a4933b17ee34006562297",
+        captureUncaught: true,
+        captureUnhandledRejections: true,
+        payload: {
+          environment: "production"
+        },
+        itemsPerMinute: 2,
+        maxItems: 5,
+        ignoredMessages: [
+          "The operation was aborted",
+          /The play\(\) request was interrupted/,
+          "The user aborted a request",
+          "Script error",
+          "The provided double value is non-finite",
+          "Value being assigned is not a finite floating-point value",
+        ],
+        checkIgnore: function() {
+          var browserSupportsAbortController = typeof AbortController !== "undefined"
+          var browserSupportsCss = !!((window.CSS && window.CSS.supports) || window.supportsCSS || false);
+          var browserSupportsCustomElements = !!(window.customElements);
+          var isIE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexOf("Trident/") > -1;
+          if (browserSupportsAbortController && browserSupportsCss && browserSupportsCustomElements && !isIE) {
+            return false;
+          }
+          return true;
+        }
+      };
+      // Rollbar Snippet
+      !function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){"use strict";var n=o(1),t=o(5);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdn.rollbar.com/rollbarjs/refs/tags/v2.22.0/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";var n=o(2),t=o(3);function a(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var l=0;function i(r,e){this.options=r,this._rollbarOldOnError=null;var o=l++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var s=o(4),d=function(r,e){return new i(r,e)},c=function(r){return new s(d,r)};function u(r){return a((function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)}))}i.prototype.loadFull=function(r,e,o,n,t){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=a((function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,a,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(a=n.args||[],i=0;i<a.length;++i)if("function"==typeof(l=a[i])){l(e);break}}"function"==typeof t&&t(e)}()}})),d.insertBefore(i,s)},i.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var p="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<p.length;++f)i.prototype[p[f]]=u(p[f]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var l=new c(e);return a((function(){e.captureUncaught&&(l._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,l,!0),e.wrapGlobalEventHandlers&&t(r,l,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,l,!0);var a=e.autoInstrument;return!1!==e.enabled&&(void 0===a||!0===a||"object"==typeof a&&a.network)&&r.addEventListener&&(r.addEventListener("load",l.captureLoad.bind(l)),r.addEventListener("DOMContentLoaded",l.captureDomContentLoaded.bind(l))),r[o]=l,l}))()}},Rollbar:c}},function(r,e,o){"use strict";function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var t;if("function"==typeof e._rollbarOldOnError)t=e._rollbarOldOnError;else if(r.onerror){for(t=r.onerror;t._rollbarOldOnError;)t=t._rollbarOldOnError;e._rollbarOldOnError=t}e.handleAnonymousErrors();var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};o&&(a._rollbarOldOnError=t),r.onerror=a}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}}},function(r,e,o){"use strict";function n(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports=function(r,e,o){if(r){var t,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<l.length;++t)r[a=l[t]]&&r[a].prototype&&n(e,r[a].prototype,o)}}},function(r,e,o){"use strict";function n(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(n.prototype)}n.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=n},function(r,e,o){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+      // End Rollbar Snippet
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115260481-1"></script>
+    <script data-controller="google-analytics"
+            data-analytics-processed="false"
+            data-google-analytics-tracking-id="UA-115260481-1">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-115260481-1', {"send_page_view":false,"linker":{"domains":["envato.com","activeden.net","audiojungle.net","themeforest.net","videohive.net","graphicriver.net","3docean.net","codecanyon.net","photodune.net","mixkit.co"]}});
+    </script>
+
+  <link rel="stylesheet" href="https://www.reshot.com/build/application-b293da850697f56448108775677209b9214b605fad2b76c84127cc5a33726256.css" media="all" data-turbo-track="reload" />
+  <script src="https://www.reshot.com/build/packs/js/application-a6cb32370e7189e0aa8e.js" crossorigin="anonymous" data-turbo-track="reload"></script>
+
+  <meta name="description" content="This SVG icon is free to download and use in your next creative project, under the Reshot license." />
+    <meta name="robots" content="noindex" />
+  <meta property="og:title" content="Weather free icon | Reshot" />
+  <meta property="og:description" content="This SVG icon is free to download and use in your next creative project, under the Reshot license." />
+  <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.reshot.com/static/icons/og/reshot-free-icons.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="reshot.com" />
+  <meta name="twitter:title" content="Weather free icon | Reshot" />
+  <meta name="twitter:description" content="This SVG icon is free to download and use in your next creative project, under the Reshot license.">
+    <meta name="twitter:image" content="https://www.reshot.com/static/icons/og/reshot-free-icons.png" />
+  
+</head>
+
+<body data-header-style="normal">
+<svg xmlns="http://www.w3.org/2000/svg" style="width: 0; height: 0; display: none;">
+  <defs>
+    <g id="menu_icon_home">
+      <path d="M2 9.54653C2 9.22086 2.15859 8.91558 2.42505 8.72834L11.4251 2.40402C11.77 2.1616 12.23 2.1616 12.5749 2.40402L21.5749 8.72834C21.8414 8.91558 22 9.22086 22 9.54653V21C22 21.5523 21.5523 22 21 22H3C2.44772 22 2 21.5523 2 21V9.54653Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="8" y="13" width="8" height="9"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="menu_icon_icons">
+      <rect x="3" y="3" width="11" height="11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="8" y="8" width="13" height="13" rx="6.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="menu_icon_illustrations">
+      <path d="M16.2851 3.04668C17.4965 1.91633 19.4605 1.91633 20.6719 3.04668L21.385 3.71202C22.5964 4.84237 22.5964 6.67503 21.385 7.80538L8.27875 20.0348L3.17886 15.2761L16.2851 3.04668Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1.47826 21.6206L3.17822 15.2757L8.27811 20.0344L1.47826 21.6206Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="1" y1="-1" x2="5.97525" y2="-1" transform="matrix(0.73114 0.682227 -0.73114 0.682227 14.228 4.96521)"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="download_button_icon">
+      <path d="M3 15L3 20H21V15"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7 10L12 15L17 10"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 15L12 4"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="search_glass">
+      <path d="M24 24.21l-6.133-6.134M10.857 20.924c5.444 0 9.857-4.413 9.857-9.857 0-5.444-4.413-9.857-9.857-9.857C5.413 1.21 1 5.623 1 11.067c0 5.444 4.413 9.857 9.857 9.857z" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+    </g>
+    <g id="search_clear">
+      <path d="M16.675 0H18.921V23.582H16.675z" transform="rotate(45 16.675 0)" />
+      <path d="M0 1.588H2.246V25.17H0z" transform="rotate(-45 0 1.588)" />
+    </g>
+    <g id="reshot-logo-footer">
+      <path d="M25.2407 5.42111C25.2407 7.79937 23.7841 9.50888 21.017 10.0481L25.4621 15.7116H20.2333L16.3018 10.2362H4.43628V15.7116H0V0.288401H18.9051C23.058 0.288401 25.2407 2.31139 25.2407 5.42111ZM4.43628 6.7837H18.8608C19.9588 6.7837 20.7646 6.35319 20.7646 5.41693C20.7646 4.48067 19.9588 4.03762 18.8608 4.03762H4.43628V6.7837Z" />
+      <path d="M42.3085 15.7074H29.5398V0.288401H42.304V4.01254H33.976V6.05225H41.724V9.77639H33.976V11.9916H42.3085V15.7074Z" />
+      <path d="M58.4376 5.05747C57.3661 4.48485 55.7413 3.77012 53.7224 3.77012C52.5314 3.77012 51.6238 4.07942 51.6238 4.77325C51.6238 5.64263 53.2929 5.73041 54.962 6.03971L55.4889 6.14002C58.8626 6.75862 60.576 8.2884 60.576 10.6583C60.576 14.558 57.0872 16 53.6073 16C50.6763 16 48.0198 15.3396 46.1515 14.0815L48.3209 10.6667C49.6181 11.4065 51.181 12.255 53.6648 12.255C54.8558 12.255 55.7324 11.9457 55.7324 11.185C55.7324 10.3824 54.7185 10.2362 52.6863 9.90596L52.0665 9.80564C48.3076 9.19958 46.7447 7.6698 46.8289 4.93626C46.9086 1.98537 49.534 0.0125392 53.4567 0.0125392C55.5907 0.0125392 57.5167 0.221526 60.3546 1.63009L58.4376 5.05747Z" fill="black"/>
+      <path d="M69.2051 5.99373H81.0617V0.288401H85.498V15.7116H81.0617V9.83908H69.2051V15.7116H64.7688V0.288401H69.2051V5.99373Z" />
+      <path d="M106.843 7.99582C106.843 12.6019 103.261 15.9958 98.2091 15.9958C93.1574 15.9958 89.5756 12.6019 89.5756 7.99582C89.5756 3.38976 93.153 0 98.2091 0C103.261 0 106.843 3.39394 106.843 7.99582ZM94.1802 7.99582C94.1802 10.3532 95.8272 11.9833 98.2047 11.9833C100.587 11.9833 102.229 10.3532 102.229 7.99582C102.229 5.63845 100.582 4.00836 98.2047 4.00836C95.8272 4.00836 94.1802 5.63845 94.1802 7.99582Z" />
+      <path d="M123.007 4.14211H118.363V15.7074H113.926V4.14211H109.282V0.288401H123.007V4.14211Z" />
+    </g>
+    <g id="outbound-arrow">
+      <path d="M1.95384 10.9766L8.40341 4.5206L8.39062 9.35938H10.4872V0.909091H2.04332L2.03054 2.9929H6.87571L0.426137 9.44886L1.95384 10.9766Z" />
+    </g>
+    <g id="faq-label-arrow">
+      <path d="M5 12H19" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 5L19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+</svg>
+
+<div class="global-header"
+     data-controller="global--header"
+     data-action="scroll@window->global--header#onScroll"
+     data-turbo-permanent
+>
+  <a href="/" class="global-header__logo">
+    <img width="46"
+         height="33"
+         alt="Reshot"
+         title="Reshot"
+         src="https://www.reshot.com/build/reshot-logo--mark-f8dfafbc1cc8fbf4dfa0e2f210265735aefa6e32f883b5a1fe27fd94f84719b3.svg">
+  </a>
+  <div class="global-header__actions">
+    <div class="global-header__search">
+      <div
+  class="search-form__wrapper"
+  data-controller="search--form"
+  data-search--form-visible-value="true"
+  data-search--form-show-clear-button-value="false"
+  data-action="resize@window->search--form#resize"
+>
+  <button type="button" class="search-form__toggle-button" data-action="click->search--form#showSearchForm" aria-label="Search">
+    <svg class="search-form__toggle-button-icon" viewBox="0 0 25 26"><use xlink:href="#search_glass" /></svg>
+  </button>
+  <form
+    action="/search/"
+    method="get"
+    class="search-form"
+    data-action="submit->search--form#search"
+  >
+    <div class="search-form__filter-wrapper" data-search--form-target="filter" data-filter="itemType" data-value="icons">
+      <div class="search-form__filter-label"  data-label></div>
+      <div class="search-form__filter-options">
+        <span class="search-form__filter-option" data-action="click->search--form#filterChange" data-type="icons">
+          <svg class="search-form__filter-icon" viewBox="0 0 24 24"><use xlink:href="#menu_icon_icons" /></svg> Icons
+        </span>
+        <span class="search-form__filter-option" data-action="click->search--form#filterChange" data-type="illustrations">
+          <svg class="search-form__filter-icon" viewBox="0 0 24 24"><use xlink:href="#menu_icon_illustrations" /></svg> Illustrations
+        </span>
+      </div>
+    </div>
+    <div class="search-form__input-wrapper">
+      <button type="submit" class="search-form__button-submit" aria-label="Search">
+        <svg class="search-form__submit-icon" viewBox="0 0 25 26"><use xlink:href="#search_glass" /></svg>
+      </button>
+      <button type="button" class="search-form__button-clear" aria-label="Clear" data-action="click->search--form#clearSearchTerms">
+        <svg class="search-form__clear-icon" viewBox="0 0 25 26"><use xlink:href="#search_clear" /></svg>
+      </button>
+      <input type="search" name="s" value="" placeholder="Search" class="search-form__input" data-search--form-target="input" aria-label="Enter Search Text" autocomplete="off" data-action="keyup->search--form#keyUp">
+    </div>
+    <div class="search-form__additional-filters">
+
+      <div class="search-form__filter-wrapper" data-search--form-target="filter" data-filter="packs" data-filter-item-type="icons" data-default="no" data-value="">
+        <div class="search-form__filter-prefix">Type</div>
+        <div class="search-form__filter-label"  data-label></div>
+        <div class="search-form__filter-options">
+          <span class="search-form__filter-option" data-action="click->search--form#filterChange" data-type="no">
+            Icons
+          </span>
+          <span class="search-form__filter-option" data-action="click->search--form#filterChange" data-type="yes">
+            Icon Packs
+          </span>
+        </div>
+      </div>
+
+
+    </div>
+  </form>
+</div>
+
+    </div>
+  </div>
+  <div class="global-header__navigation" data-action="mouseover->global--header#interactedWithNav">
+    <a class="global-header__navigation-link" href="/">
+      <svg class="global-header__navigation-link-svg" viewBox="0 0 24 24"><use xlink:href="#menu_icon_home" /></svg>
+      <span class="global-header__navigation-link-slide">
+        <span class="global-header__navigation-link-txt">Home</span>
+      </span>
+</a>    <a class="global-header__navigation-link global-header__navigation-link--current" href="/free-svg-icons/">
+      <svg class="global-header__navigation-link-svg" viewBox="0 0 24 24"><use xlink:href="#menu_icon_icons" /></svg>
+      <span class="global-header__navigation-link-slide">
+        <span class="global-header__navigation-link-txt">Icons</span>
+      </span>
+</a>    <a class="global-header__navigation-link" href="/free-vector-illustrations/">
+      <svg class="global-header__navigation-link-svg" viewBox="0 0 24 24"><use xlink:href="#menu_icon_illustrations" /></svg>
+      <span class="global-header__navigation-link-slide">
+        <span class="global-header__navigation-link-txt">Illustrations</span>
+      </span>
+</a>  </div>
+</div>
+
+    <div class="icons-item-page">
+  <div class="icons-item-page__preview">
+    <img class="icons-item-page__image" alt="Weather" width="150" height="150" src="https://www.reshot.com/preview-assets/icons/RDVC82WGXP/weather-RDVC82WGXP.svg" />
+  </div>
+  <div class="icons-item-page__meta">
+    <h1 class="mega">Weather</h1>
+    <div class="icons-item-page__details">
+      <div class="icons-item-page__pack-title"><a href="/free-svg-icons/item/ecology-set-icon-pack-S4ULE9B7QJ/">Ecology Set Icon Pack</a></div>
+        <a
+  title="Envato Elements"
+  rel="noopener"
+  target="_blank"
+  href="https://elements.envato.com/user/StringLabs?utm_source=reshot&amp;utm_medium=referral&amp;utm_campaign=elements_reshot_icon_item_page"
+  class="icons-item-page__contributor"
+  data-controller="elements--link"
+  data-elements--link-campaign-value="elements_reshot_icon_item_page"
+  data-elements--link-uri-value="https://elements.envato.com/user/StringLabs"
+  data-action="click->elements--link#logClickEvent"
+>
+  @StringLabs
+</a>
+
+    </div>
+    <div class="icons-item-page__buttons">
+      <button
+  class="download-button download-button--has-label download-button--white"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="RDVC82WGXP"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_page"
+  aria-label="Copy SVG Code"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Copy SVG Code</span>
+</button>
+
+      <button
+  class="download-button download-button--has-label download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="RDVC82WGXP"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_page"
+  aria-label="Download SVG"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+    <span>Download SVG</span>
+</button>
+
+    </div>
+    <p class="icons-item-page__license">
+      Free to use in your next creative project under the <br/>
+      <a href="/license/">Reshot Stock Icon Free License</a>.
+    </p>
+    <div class="icons-item-page__tags">
+        <a class="icons-item-page__tag-link" href="/free-svg-icons/ecology/">ecology</a>
+        <a class="icons-item-page__tag-link" href="/free-svg-icons/weather/">weather</a>
+        <a class="icons-item-page__tag-link" href="/free-svg-icons/green/">green</a>
+    </div>
+  </div>
+  <div class="icons-item-page__pack-items">
+    <h2 class="icons-item-page__pack-items-title">More from Ecology Set Icon Pack</h2>
+    <div class="item-grid-square">
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/plant-AF9TMRD5U4/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/AF9TMRD5U4/plant-AF9TMRD5U4.svg)"></div>
+    <span class="icons-card__title">Plant</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="AF9TMRD5U4"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="AF9TMRD5U4"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/battery-YEQ3H8V24J/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/YEQ3H8V24J/battery-YEQ3H8V24J.svg)"></div>
+    <span class="icons-card__title">Battery</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="YEQ3H8V24J"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="YEQ3H8V24J"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/bio-drum-GVHJL5S9TE/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/GVHJL5S9TE/bio-drum-GVHJL5S9TE.svg)"></div>
+    <span class="icons-card__title">Bio Drum</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="GVHJL5S9TE"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="GVHJL5S9TE"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/nature-food-28FYQL5T4E/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/28FYQL5T4E/nature-food-28FYQL5T4E.svg)"></div>
+    <span class="icons-card__title">Nature Food</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="28FYQL5T4E"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="28FYQL5T4E"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/polution-4S6UNH7WJD/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/4S6UNH7WJD/polution-4S6UNH7WJD.svg)"></div>
+    <span class="icons-card__title">Polution</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="4S6UNH7WJD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="4S6UNH7WJD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/electric-car-TKAH3F4R7U/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/TKAH3F4R7U/electric-car-TKAH3F4R7U.svg)"></div>
+    <span class="icons-card__title">Electric Car</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="TKAH3F4R7U"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="TKAH3F4R7U"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/converting-energy-5CQAZ7SYMT/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/5CQAZ7SYMT/converting-energy-5CQAZ7SYMT.svg)"></div>
+    <span class="icons-card__title">Converting Energy</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="5CQAZ7SYMT"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="5CQAZ7SYMT"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/earth-rotation-HE4FTCYXAD/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/HE4FTCYXAD/earth-rotation-HE4FTCYXAD.svg)"></div>
+    <span class="icons-card__title">Earth Rotation</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="HE4FTCYXAD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="HE4FTCYXAD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/tech-BUSHC5WL6R/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/BUSHC5WL6R/tech-BUSHC5WL6R.svg)"></div>
+    <span class="icons-card__title">Tech</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BUSHC5WL6R"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BUSHC5WL6R"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/temprature-HA4RQLMUX8/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/HA4RQLMUX8/temprature-HA4RQLMUX8.svg)"></div>
+    <span class="icons-card__title">Temprature</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="HA4RQLMUX8"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="HA4RQLMUX8"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/application-B6RMNF9CSY/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/B6RMNF9CSY/application-B6RMNF9CSY.svg)"></div>
+    <span class="icons-card__title">Application</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="B6RMNF9CSY"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="B6RMNF9CSY"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/tap-water-FPT7XZ9NYD/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/FPT7XZ9NYD/tap-water-FPT7XZ9NYD.svg)"></div>
+    <span class="icons-card__title">Tap Water</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="FPT7XZ9NYD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="FPT7XZ9NYD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/clean-air-7DB2N968UA/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/7DB2N968UA/clean-air-7DB2N968UA.svg)"></div>
+    <span class="icons-card__title">Clean Air</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="7DB2N968UA"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="7DB2N968UA"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/water-secure-AWNBJ32DG7/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/AWNBJ32DG7/water-secure-AWNBJ32DG7.svg)"></div>
+    <span class="icons-card__title">Water Secure</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="AWNBJ32DG7"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="AWNBJ32DG7"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/renewable-battery-U5M3S7EDGB/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/U5M3S7EDGB/renewable-battery-U5M3S7EDGB.svg)"></div>
+    <span class="icons-card__title">Renewable Battery</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="U5M3S7EDGB"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="U5M3S7EDGB"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/factory-WP9TZNAXHE/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/WP9TZNAXHE/factory-WP9TZNAXHE.svg)"></div>
+    <span class="icons-card__title">Factory</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="WP9TZNAXHE"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="WP9TZNAXHE"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/smart-bike-BRP5NJ4WGC/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/BRP5NJ4WGC/smart-bike-BRP5NJ4WGC.svg)"></div>
+    <span class="icons-card__title">Smart Bike</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BRP5NJ4WGC"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BRP5NJ4WGC"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/enviroment-secure-9D3JPBKXYT/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/9D3JPBKXYT/enviroment-secure-9D3JPBKXYT.svg)"></div>
+    <span class="icons-card__title">Enviroment Secure</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="9D3JPBKXYT"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="9D3JPBKXYT"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/electricity-BRJKMW35YF/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/BRJKMW35YF/electricity-BRJKMW35YF.svg)"></div>
+    <span class="icons-card__title">Electricity</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BRJKMW35YF"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BRJKMW35YF"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/plant-NM9W8CB3ZG/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/NM9W8CB3ZG/plant-NM9W8CB3ZG.svg)"></div>
+    <span class="icons-card__title">Plant</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="NM9W8CB3ZG"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="NM9W8CB3ZG"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/earth-ZH3JT7UPE9/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/ZH3JT7UPE9/earth-ZH3JT7UPE9.svg)"></div>
+    <span class="icons-card__title">Earth</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="ZH3JT7UPE9"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="ZH3JT7UPE9"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/co2-62QNMPR8XB/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/62QNMPR8XB/co2-62QNMPR8XB.svg)"></div>
+    <span class="icons-card__title">Co2</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="62QNMPR8XB"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="62QNMPR8XB"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/idea-PWMC32NVTZ/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/PWMC32NVTZ/idea-PWMC32NVTZ.svg)"></div>
+    <span class="icons-card__title">Idea</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="PWMC32NVTZ"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="PWMC32NVTZ"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/nuclear-science-N5QJRKFX9P/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/N5QJRKFX9P/nuclear-science-N5QJRKFX9P.svg)"></div>
+    <span class="icons-card__title">Nuclear Science</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="N5QJRKFX9P"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="N5QJRKFX9P"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/smart-car-GKY3DU7CNE/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/GKY3DU7CNE/smart-car-GKY3DU7CNE.svg)"></div>
+    <span class="icons-card__title">Smart Car</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="GKY3DU7CNE"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="GKY3DU7CNE"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/go-green-JS74ELCVQG/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/JS74ELCVQG/go-green-JS74ELCVQG.svg)"></div>
+    <span class="icons-card__title">Go Green</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="JS74ELCVQG"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="JS74ELCVQG"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/enviroment-G4WQAXDZKL/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/G4WQAXDZKL/enviroment-G4WQAXDZKL.svg)"></div>
+    <span class="icons-card__title">Enviroment</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="G4WQAXDZKL"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="G4WQAXDZKL"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/nuclear-symbol-QFB3LKJ6TG/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/QFB3LKJ6TG/nuclear-symbol-QFB3LKJ6TG.svg)"></div>
+    <span class="icons-card__title">Nuclear Symbol</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="QFB3LKJ6TG"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="QFB3LKJ6TG"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/tree-UKN7B5AG4F/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/UKN7B5AG4F/tree-UKN7B5AG4F.svg)"></div>
+    <span class="icons-card__title">Tree</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="UKN7B5AG4F"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="UKN7B5AG4F"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/oil-drum-BTAD6Y2ZHX/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/BTAD6Y2ZHX/oil-drum-BTAD6Y2ZHX.svg)"></div>
+    <span class="icons-card__title">Oil Drum</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BTAD6Y2ZHX"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BTAD6Y2ZHX"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/green-phone-4QTD9LS56J/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/4QTD9LS56J/green-phone-4QTD9LS56J.svg)"></div>
+    <span class="icons-card__title">Green Phone</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="4QTD9LS56J"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="4QTD9LS56J"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/trash-BJEFG2Z7DL/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/BJEFG2Z7DL/trash-BJEFG2Z7DL.svg)"></div>
+    <span class="icons-card__title">Trash</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BJEFG2Z7DL"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BJEFG2Z7DL"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/replanting-MCJBUQPNGK/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/MCJBUQPNGK/replanting-MCJBUQPNGK.svg)"></div>
+    <span class="icons-card__title">Replanting</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="MCJBUQPNGK"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="MCJBUQPNGK"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/ecology-HXLJGVDB87/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/HXLJGVDB87/ecology-HXLJGVDB87.svg)"></div>
+    <span class="icons-card__title">Ecology</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="HXLJGVDB87"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="HXLJGVDB87"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/leaf-42VREHG6FA/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/42VREHG6FA/leaf-42VREHG6FA.svg)"></div>
+    <span class="icons-card__title">Leaf</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="42VREHG6FA"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="42VREHG6FA"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/rain-8FNE45PDW6/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/8FNE45PDW6/rain-8FNE45PDW6.svg)"></div>
+    <span class="icons-card__title">Rain</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="8FNE45PDW6"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="8FNE45PDW6"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/zero-emission-7Q8YU9PDZX/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/7Q8YU9PDZX/zero-emission-7Q8YU9PDZX.svg)"></div>
+    <span class="icons-card__title">Zero Emission</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="7Q8YU9PDZX"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="7Q8YU9PDZX"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/sealife-58EKVM4R3Y/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/58EKVM4R3Y/sealife-58EKVM4R3Y.svg)"></div>
+    <span class="icons-card__title">Sealife</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="58EKVM4R3Y"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="58EKVM4R3Y"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/search-84DYUFMXBC/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/84DYUFMXBC/search-84DYUFMXBC.svg)"></div>
+    <span class="icons-card__title">Search</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="84DYUFMXBC"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="84DYUFMXBC"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/water-L8QANWSCZB/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/L8QANWSCZB/water-L8QANWSCZB.svg)"></div>
+    <span class="icons-card__title">Water</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="L8QANWSCZB"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="L8QANWSCZB"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/flora-94DCRFJKQ3/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/94DCRFJKQ3/flora-94DCRFJKQ3.svg)"></div>
+    <span class="icons-card__title">Flora</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="94DCRFJKQ3"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="94DCRFJKQ3"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/green-city-3EXNRM89U2/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/3EXNRM89U2/green-city-3EXNRM89U2.svg)"></div>
+    <span class="icons-card__title">Green City</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="3EXNRM89U2"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="3EXNRM89U2"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/bike-NF7QY6SEUD/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/NF7QY6SEUD/bike-NF7QY6SEUD.svg)"></div>
+    <span class="icons-card__title">Bike</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="NF7QY6SEUD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="NF7QY6SEUD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/smart-home-HMLF94YVT3/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/HMLF94YVT3/smart-home-HMLF94YVT3.svg)"></div>
+    <span class="icons-card__title">Smart Home</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="HMLF94YVT3"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="HMLF94YVT3"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/services-BMLE8RYSZK/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/BMLE8RYSZK/services-BMLE8RYSZK.svg)"></div>
+    <span class="icons-card__title">Services</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BMLE8RYSZK"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="BMLE8RYSZK"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/energy-4R7SEP8YNV/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/4R7SEP8YNV/energy-4R7SEP8YNV.svg)"></div>
+    <span class="icons-card__title">Energy</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="4R7SEP8YNV"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="4R7SEP8YNV"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/service-UXGZSFBLDH/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/UXGZSFBLDH/service-UXGZSFBLDH.svg)"></div>
+    <span class="icons-card__title">Service</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="UXGZSFBLDH"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="UXGZSFBLDH"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/trash-truck-PYTWJMK6DN/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/PYTWJMK6DN/trash-truck-PYTWJMK6DN.svg)"></div>
+    <span class="icons-card__title">Trash Truck</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="PYTWJMK6DN"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="PYTWJMK6DN"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/recycled-bag-JRW7Y3NQL8/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/JRW7Y3NQL8/recycled-bag-JRW7Y3NQL8.svg)"></div>
+    <span class="icons-card__title">Recycled Bag</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="JRW7Y3NQL8"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="JRW7Y3NQL8"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/replanting-FG42Y7PCHQ/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/FG42Y7PCHQ/replanting-FG42Y7PCHQ.svg)"></div>
+    <span class="icons-card__title">Replanting</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="FG42Y7PCHQ"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="FG42Y7PCHQ"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/think-UVFGWLDK84/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/UVFGWLDK84/think-UVFGWLDK84.svg)"></div>
+    <span class="icons-card__title">Think</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="UVFGWLDK84"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="UVFGWLDK84"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/forest-M5UPLNTRE3/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/M5UPLNTRE3/forest-M5UPLNTRE3.svg)"></div>
+    <span class="icons-card__title">Forest</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="M5UPLNTRE3"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="M5UPLNTRE3"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/green-campaign-PEW7T63UHR/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/PEW7T63UHR/green-campaign-PEW7T63UHR.svg)"></div>
+    <span class="icons-card__title">Green Campaign</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="PEW7T63UHR"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="PEW7T63UHR"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/global-warming-RENBQT43HA/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/RENBQT43HA/global-warming-RENBQT43HA.svg)"></div>
+    <span class="icons-card__title">Global Warming</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="RENBQT43HA"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="RENBQT43HA"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/nuclear-tank-XKR3ZABE78/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/XKR3ZABE78/nuclear-tank-XKR3ZABE78.svg)"></div>
+    <span class="icons-card__title">Nuclear Tank</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="XKR3ZABE78"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="XKR3ZABE78"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/electricity-secure-RJBU53SK9E/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/RJBU53SK9E/electricity-secure-RJBU53SK9E.svg)"></div>
+    <span class="icons-card__title">Electricity Secure</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="RJBU53SK9E"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="RJBU53SK9E"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/eco-energy-GD6SB8WAUV/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/GD6SB8WAUV/eco-energy-GD6SB8WAUV.svg)"></div>
+    <span class="icons-card__title">Eco Energy</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="GD6SB8WAUV"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="GD6SB8WAUV"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/drum-62XJTUVH8F/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/62XJTUVH8F/drum-62XJTUVH8F.svg)"></div>
+    <span class="icons-card__title">Drum</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="62XJTUVH8F"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="62XJTUVH8F"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/renewable-energy-JRSPYGQ64K/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/JRSPYGQ64K/renewable-energy-JRSPYGQ64K.svg)"></div>
+    <span class="icons-card__title">Renewable Energy</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="JRSPYGQ64K"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="JRSPYGQ64K"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/energy-N6KD8LXJ3E/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/N6KD8LXJ3E/energy-N6KD8LXJ3E.svg)"></div>
+    <span class="icons-card__title">Energy</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="N6KD8LXJ3E"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="N6KD8LXJ3E"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/organic-waste-VURCZ84BDF/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/VURCZ84BDF/organic-waste-VURCZ84BDF.svg)"></div>
+    <span class="icons-card__title">Organic Waste</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="VURCZ84BDF"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="VURCZ84BDF"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/recycled-W9SBK4VLYF/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/W9SBK4VLYF/recycled-W9SBK4VLYF.svg)"></div>
+    <span class="icons-card__title">Recycled</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="W9SBK4VLYF"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="W9SBK4VLYF"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/energy-H9PL3DY7KC/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/H9PL3DY7KC/energy-H9PL3DY7KC.svg)"></div>
+    <span class="icons-card__title">Energy</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="H9PL3DY7KC"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="H9PL3DY7KC"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/coral-QSL7EHY8KR/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/QSL7EHY8KR/coral-QSL7EHY8KR.svg)"></div>
+    <span class="icons-card__title">Coral</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="QSL7EHY8KR"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="QSL7EHY8KR"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/water-energy-RZ7AES854F/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/RZ7AES854F/water-energy-RZ7AES854F.svg)"></div>
+    <span class="icons-card__title">Water Energy</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="RZ7AES854F"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="RZ7AES854F"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/battery-P3VYA4WMFK/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/P3VYA4WMFK/battery-P3VYA4WMFK.svg)"></div>
+    <span class="icons-card__title">Battery</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="P3VYA4WMFK"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="P3VYA4WMFK"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/trash-P86HDMKB5R/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/P86HDMKB5R/trash-P86HDMKB5R.svg)"></div>
+    <span class="icons-card__title">Trash</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="P86HDMKB5R"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="P86HDMKB5R"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/sun-energy-WL9MVB4TYD/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/WL9MVB4TYD/sun-energy-WL9MVB4TYD.svg)"></div>
+    <span class="icons-card__title">Sun Energy</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="WL9MVB4TYD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="WL9MVB4TYD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/air-polution-QJBED6UHYG/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/QJBED6UHYG/air-polution-QJBED6UHYG.svg)"></div>
+    <span class="icons-card__title">Air Polution</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="QJBED6UHYG"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="QJBED6UHYG"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/clean-water-AG3JBHMLR6/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/AG3JBHMLR6/clean-water-AG3JBHMLR6.svg)"></div>
+    <span class="icons-card__title">Clean Water</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="AG3JBHMLR6"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="AG3JBHMLR6"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/air-filter-Q7UGL3NHYK/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/Q7UGL3NHYK/air-filter-Q7UGL3NHYK.svg)"></div>
+    <span class="icons-card__title">Air Filter</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="Q7UGL3NHYK"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="Q7UGL3NHYK"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/water-polution-Q6BNMZ3GHP/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/Q6BNMZ3GHP/water-polution-Q6BNMZ3GHP.svg)"></div>
+    <span class="icons-card__title">Water Polution</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="Q6BNMZ3GHP"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="Q6BNMZ3GHP"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/tree-logging-URSEHGJ7L4/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/URSEHGJ7L4/tree-logging-URSEHGJ7L4.svg)"></div>
+    <span class="icons-card__title">Tree Logging</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="URSEHGJ7L4"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="URSEHGJ7L4"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/trash-H9VAGXKJ8Q/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/H9VAGXKJ8Q/trash-H9VAGXKJ8Q.svg)"></div>
+    <span class="icons-card__title">Trash</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="H9VAGXKJ8Q"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="H9VAGXKJ8Q"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/hybrid-car-N8QS5KRJ92/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/N8QS5KRJ92/hybrid-car-N8QS5KRJ92.svg)"></div>
+    <span class="icons-card__title">Hybrid Car</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="N8QS5KRJ92"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="N8QS5KRJ92"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/enviroment-love-XAE29M876W/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/XAE29M876W/enviroment-love-XAE29M876W.svg)"></div>
+    <span class="icons-card__title">Enviroment Love</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="XAE29M876W"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="XAE29M876W"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/water-filter-RK94XNELF8/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/RK94XNELF8/water-filter-RK94XNELF8.svg)"></div>
+    <span class="icons-card__title">Water Filter</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="RK94XNELF8"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="RK94XNELF8"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/bio-garbage-bag-TJ7BPVS9XE/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/TJ7BPVS9XE/bio-garbage-bag-TJ7BPVS9XE.svg)"></div>
+    <span class="icons-card__title">Bio Garbage Bag</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="TJ7BPVS9XE"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="TJ7BPVS9XE"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/windmill-A72UFJK45W/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/A72UFJK45W/windmill-A72UFJK45W.svg)"></div>
+    <span class="icons-card__title">Windmill</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="A72UFJK45W"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="A72UFJK45W"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/green-house-K7JUBSXTAP/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/K7JUBSXTAP/green-house-K7JUBSXTAP.svg)"></div>
+    <span class="icons-card__title">Green House</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="K7JUBSXTAP"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="K7JUBSXTAP"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/electric-station-3E7VH5U9AJ/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/3E7VH5U9AJ/electric-station-3E7VH5U9AJ.svg)"></div>
+    <span class="icons-card__title">Electric Station</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="3E7VH5U9AJ"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="3E7VH5U9AJ"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/wind-29FSW3APRK/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/29FSW3APRK/wind-29FSW3APRK.svg)"></div>
+    <span class="icons-card__title">Wind</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="29FSW3APRK"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="29FSW3APRK"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/water-circulation-A6PYFHBCG7/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/A6PYFHBCG7/water-circulation-A6PYFHBCG7.svg)"></div>
+    <span class="icons-card__title">Water Circulation</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="A6PYFHBCG7"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="A6PYFHBCG7"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/nuclear-tower-72N9BDA4ZC/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/72N9BDA4ZC/nuclear-tower-72N9BDA4ZC.svg)"></div>
+    <span class="icons-card__title">Nuclear Tower</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="72N9BDA4ZC"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="72N9BDA4ZC"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/trash-truck-UCGAL8KSQP/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/UCGAL8KSQP/trash-truck-UCGAL8KSQP.svg)"></div>
+    <span class="icons-card__title">Trash Truck</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="UCGAL8KSQP"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="UCGAL8KSQP"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/fauna-54S2GBVPRQ/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/54S2GBVPRQ/fauna-54S2GBVPRQ.svg)"></div>
+    <span class="icons-card__title">Fauna</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="54S2GBVPRQ"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="54S2GBVPRQ"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/wind-energy-GVHNAS3B5T/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/GVHNAS3B5T/wind-energy-GVHNAS3B5T.svg)"></div>
+    <span class="icons-card__title">Wind Energy</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="GVHNAS3B5T"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="GVHNAS3B5T"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/eco-home-JF7SDT28HX/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/JF7SDT28HX/eco-home-JF7SDT28HX.svg)"></div>
+    <span class="icons-card__title">Eco Home</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="JF7SDT28HX"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="JF7SDT28HX"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/ac-SEPHKGXJYD/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/SEPHKGXJYD/ac-SEPHKGXJYD.svg)"></div>
+    <span class="icons-card__title">Ac</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="SEPHKGXJYD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="SEPHKGXJYD"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/ecology-8FYVNBCG6H/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/8FYVNBCG6H/ecology-8FYVNBCG6H.svg)"></div>
+    <span class="icons-card__title">Ecology</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="8FYVNBCG6H"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="8FYVNBCG6H"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/diesel-truck-CQRJ4MF2NX/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/CQRJ4MF2NX/diesel-truck-CQRJ4MF2NX.svg)"></div>
+    <span class="icons-card__title">Diesel Truck</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="CQRJ4MF2NX"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="CQRJ4MF2NX"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/love-plant-ALJRX6QBFP/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/ALJRX6QBFP/love-plant-ALJRX6QBFP.svg)"></div>
+    <span class="icons-card__title">Love Plant</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="ALJRX6QBFP"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="ALJRX6QBFP"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/garbage-bag-T8QD4WRJML/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/T8QD4WRJML/garbage-bag-T8QD4WRJML.svg)"></div>
+    <span class="icons-card__title">Garbage Bag</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="T8QD4WRJML"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="T8QD4WRJML"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/clean-cloud-SHCR29GA7Q/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/SHCR29GA7Q/clean-cloud-SHCR29GA7Q.svg)"></div>
+    <span class="icons-card__title">Clean Cloud</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="SHCR29GA7Q"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="SHCR29GA7Q"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/plant-B5Z7HMEC93/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/B5Z7HMEC93/plant-B5Z7HMEC93.svg)"></div>
+    <span class="icons-card__title">Plant</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="B5Z7HMEC93"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="B5Z7HMEC93"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/solar-panel-2EM5YB9WL3/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/2EM5YB9WL3/solar-panel-2EM5YB9WL3.svg)"></div>
+    <span class="icons-card__title">Solar Panel</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="2EM5YB9WL3"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="2EM5YB9WL3"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/electricity-station-XLKRV4SDQH/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/XLKRV4SDQH/electricity-station-XLKRV4SDQH.svg)"></div>
+    <span class="icons-card__title">Electricity Station</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="XLKRV4SDQH"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="XLKRV4SDQH"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/plastic-waste-Z48XS3TDRY/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/Z48XS3TDRY/plastic-waste-Z48XS3TDRY.svg)"></div>
+    <span class="icons-card__title">Plastic Waste</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="Z48XS3TDRY"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="Z48XS3TDRY"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+    <div class="icons-card">
+  <a class="icons-card__link" aria-label="Link to item page" rel="nofollow" href="/free-svg-icons/item/station-KBJ5AY7NZ8/">
+    <div class="icons-card__image" style="--image: url(https://www.reshot.com/preview-assets/icons/KBJ5AY7NZ8/station-KBJ5AY7NZ8.svg)"></div>
+    <span class="icons-card__title">Station</span>
+</a>  <div class="icons-card__download">
+    SVG
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="KBJ5AY7NZ8"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="copy"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="13" height="13" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v12c0 .6.4 1 1 1h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+    <button
+  class="download-button download-button--black"
+  data-controller="download--button"
+  data-action="click->download--button#click"
+  data-download--button-humane-id-value="KBJ5AY7NZ8"
+  data-download--button-item-type-value="icon"
+  data-download--button-operation-value="download"
+  data-download--button-source-value="icon_grid"
+  aria-label="Download"
+>
+    <svg class="download-button__icon" width="25" height="24" viewBox="0 0 25 24"><use xlink:href="#download_button_icon" /></svg>
+</button>
+
+  </div>
+
+</div>
+
+</div>
+
+
+  </div>
+</div>
+
+
+<div class="global-footer" id="global-footer" data-turbo-permanent>
+  <a class="global-footer__logo-link" href="/">
+    <img
+      class="global-footer__logo-image"
+      width="113"
+      height="82"
+      alt="Reshot"
+      title="Reshot"
+      src="https://www.reshot.com/build/reshot-logo--mark-f8dfafbc1cc8fbf4dfa0e2f210265735aefa6e32f883b5a1fe27fd94f84719b3.svg"
+      />
+</a>  <div class="global-footer__inner">
+    <div class="global-footer__copyright">
+      <p>Copyright &copy; 2023. All rights reserved -
+        <a
+  title="Envato Elements"
+  rel="noopener"
+  target="_blank"
+  href="https://elements.envato.com/?utm_source=reshot&amp;utm_medium=referral&amp;utm_campaign=elements_reshot_footer"
+  class="global-footer__envato-link"
+  data-controller="elements--link"
+  data-elements--link-campaign-value="elements_reshot_footer"
+  data-elements--link-uri-value="/"
+  data-action="click->elements--link#logClickEvent"
+>
+  Envato Elements
+</a>
+
+      </p>
+    </div>
+    <div class="global-footer__pages">
+      <p>
+        <a class="global-footer__pages-link" href="/license/">License</a> &#8729;
+        <a class="global-footer__pages-link" href="/terms/">Terms</a> &#8729;
+        <a class="global-footer__pages-link" href="/sitemap/">Sitemap</a>
+      </p>
+    </div>
+    <div class="global-footer__item-types">
+      <p>
+        <a class="global-footer__pages-link" href="/free-svg-icons/">Icons</a> &#8729;
+        <a class="global-footer__pages-link" href="/free-vector-illustrations/">Illustrations</a> <span class="global-footer__pages-link-dot">&#8729;</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div data-modal-target="container" class="modal__overlay" data-modal-toggle="close" data-controller="modal" data-action="click->modal#close">
+  <div data-modal-target="content" class="modal__content" tabindex="-1" aria-label="Modal" data-action="click->modal#stopClickPropagation">
+  </div>
+</div>
+
+  <div data-controller="global--message">
+  <template data-global--message-target="template">
+    <div class="global-message__popup">
+      <span class="global-message__text" data-text></span>
+    </div>
+  </template>
+  <div class="global-message__wrapper" data-global--message-target="container"></div>
+</div>
+
+<div id="global-browser-support" data-nosnippet>
+  Our site is great except that we don‘t support your browser. We recommend using the latest version of
+  <a href="https://www.google.com/chrome/" rel="nofollow">Google Chrome</a>,
+  <a href="https://www.mozilla.org/en-US/firefox/new/" rel="nofollow">Mozilla Firefox</a>,
+  <a href="https://www.microsoft.com/en-us/edge" rel="nofollow">Microsoft Edge</a>, or
+  <a href="https://support.apple.com/en_AU/downloads/safari" rel="nofollow">Apple Safari</a>.
+</div>
+<script>
+  var browserSupportsAbortController = typeof AbortController !== "undefined"
+  var browserSupportsCss = !!((window.CSS && window.CSS.supports) || window.supportsCSS || false);
+  var browserSupportsCustomElements = !!(window.customElements);
+  var isIE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexOf("Trident/") > -1;
+  if (browserSupportsAbortController && browserSupportsCss && browserSupportsCustomElements && !isIE) {
+    document.getElementById('global-browser-support').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
