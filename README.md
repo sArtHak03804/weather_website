@@ -5,6 +5,18 @@ Certainly, here's a revised description for the WeatherNow project:
 
 ![WeatherNow Logo](images/logo.png)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/sArtHak0384/weather-now.svg)](https://github.com/yourusername/weather-now/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/sArtHak0384/weather-now.svg)](https://github.com/yourusername/weather-now/network)
+[![GitHub issues](https://img.shields.io/github/issues/sArtHak0384/weather-now.svg)](https://github.com/yourusername/weather-now/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/sArtHak0384/weather-now.svg)](https://github.com/yourusername/weather-now/pulls)
+
+WeatherNow is a sophisticated and intuitive weather forecast website...
+
+<!-- Rest of the content remains the same -->
+
+# WeatherNow - Your Ultimate Weather Forecast Website
+
 WeatherNow is a sophisticated and intuitive weather forecast website that delivers accurate and up-to-the-minute weather information for locations worldwide. Developed using cutting-edge HTML, CSS, and JavaScript technologies, WeatherNow offers a seamless and engaging user experience. Whether you're planning your daily activities or preparing for a trip, WeatherNow empowers you with the weather insights you need.
 
 ## Features
@@ -31,7 +43,7 @@ WeatherNow is a sophisticated and intuitive weather forecast website that delive
 
 ## Usage
 
-1. Clone the repository: `git clone https://github.com/yourusername/weather-now.git`
+1. Clone the repository: `git clone( https://github.com/sArtHak03804/weather_website)
 2. Launch `index.html` in your preferred web browser.
 3. Enter a city name in the search bar or grant the website access to your device's geolocation.
 4. Explore the comprehensive weather forecast, interactive map, and other exceptional features.
@@ -47,9 +59,9 @@ WeatherNow is a sophisticated and intuitive weather forecast website that delive
 ## License
 
 This project operates under the [MIT License](LICENSE.md).
-
 ---
 
-Designed and developed by [Your Name](https://github.com/yourusername).
+Designed and developed by [Sarthak_Patel](https://github.com/sArtHak0384).
+---
 
 Elevate your weather understanding and stay ahead with WeatherNow!
