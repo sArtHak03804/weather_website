@@ -3,6 +3,7 @@ Certainly, here's a revised description for the WeatherNow project:
 
 # WeatherNow - Your Ultimate Weather Forecast Website
 
+**[View WeatherNow](https://raw.githack.com/sArtHak03804/weather_website/main/index.html)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -10,8 +11,6 @@ Certainly, here's a revised description for the WeatherNow project:
 ![Tech Stack](https://img.shields.io/badge/Tech_Stack-HTML5%20%7C%20CSS3%20%7C%20JavaScript-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active-success.svg)
 ![Version](https://img.shields.io/badge/Version-v1.0-blue.svg)
-![Contributors](https://img.shields.io/badge/Contributors-5-orange.svg)
-
 --
 WeatherNow is a sophisticated and intuitive weather forecast website...
 # WeatherNow - Your Ultimate Weather Forecast Website
