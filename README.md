@@ -1,6 +1,3 @@
-# weather_website
-Certainly, here's a revised description for the WeatherNow project:
-
 # WeatherNow - Your Ultimate Weather Forecast Website
 
 **[View WeatherNow](https://raw.githack.com/sArtHak03804/weather_website/main/index.html)**
@@ -12,7 +9,6 @@ Certainly, here's a revised description for the WeatherNow project:
 ![Status](https://img.shields.io/badge/Status-Active-success.svg)
 ![Version](https://img.shields.io/badge/Version-v1.0-blue.svg)
 --
-WeatherNow is a sophisticated and intuitive weather forecast website...
 # WeatherNow - Your Ultimate Weather Forecast Website
 
 WeatherNow is a sophisticated and intuitive weather forecast website that delivers accurate and up-to-the-minute weather information for locations worldwide. Developed using cutting-edge HTML, CSS, and JavaScript technologies, WeatherNow offers a seamless and engaging user experience. Whether you're planning your daily activities or preparing for a trip, WeatherNow empowers you with the weather insights you need.
